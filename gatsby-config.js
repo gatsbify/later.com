@@ -2,28 +2,28 @@ const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Serif',
-    description: 'my theme',
+    title: 'Later.com ',
+    description: '#1 Marketing Platform for Instagram Visually plan, schedule and analyzey',
     contact: {
       phone: 'XXX XXX XXX',
-      email: 'zerostaticthemes@gmail.com',
+      email: 'hello@later.com',
     },
     menuLinks: [
       {
-        name: 'Services',
-        link: '/services',
+        name: 'Platform',
+        link: '/platform',
       },
       {
-        name: 'Team',
-        link: '/team',
+        name: 'Pricing',
+        link: '/pricing',
       },
       {
-        name: 'Testimonials',
-        link: '/testimonials',
+        name: 'More',
+        link: '/More',
       },
       {
-        name: 'Contact',
-        link: '/contact',
+        name: 'Sign In',
+        link: '/https://app.later.com/',
       },
     ],
   },
@@ -56,7 +56,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: guid ? guid : 'UA-XXX-1',
+        trackingId: guid || 'UA-XXX-1',
         // Puts tracking script in the head instead of the body
         head: false,
       },
